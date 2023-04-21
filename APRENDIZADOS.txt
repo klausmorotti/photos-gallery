@@ -5,3 +5,32 @@ npm install firebase
 
 1- Criar projeto lá no firebase
 2- Pegar firebaseConfig e jogar dentro de um arquivo no vscode Src --> Libs --> Firebase.ts
+3- No firebase, em storage, seguir os 2 passos para criar base de dados
+4- Em Storage --> Rules, configurar pro projeto não precisar de autenticação (allow read, write;)
+
+- CONFIGURANDO O FIREBASE:
+1- Criar arquivo .env.local (Incluir este no gitignore), dentro dele criar variáveis de ambiente que armazenem cada item do objeto firebaseConfig
+EX: REACT_APP_FIREBASE_APIKEY=87DF9FSDG78FDG
+
+2- Criar um .env.example com os mesmos dados de .env.local porém sem os valores das variáveis, para caso alguém queira utilizar do github preencher com os dados do seu firebase
+EX: REACT_APP_FIREBASE_APIKEY=
+
+2- Em Src --> Libs --> referenciar as variáveis do .env.local para cada item do objeto firebaseConfig
+EX: const firebaseConfig = { apykey: process.env.REACT_APP_FIREBASE_APIKEY }
+
+3- Importar a inicialização do App firebase e storage do firebase para usar
+EX:
+import { initializeApp } from 'firebase/app';
+import { getStorage } from 'firebase/storage';
+
+const firebaseApp = initializeApp(firebaseConfig);
+const firebaseStorage = getStorage(firebaseApp);
+
+DETALHES:
+- Criar modal para visualizar foto
+- Corrigir vulnerabilidade de atualizar página dentro de um álbum (não retorna nada)
+- Criar um Loader 
+- Fazer um header bonitinho
+- Upload
+- Filtro por pesquisa
+- Responsivisar

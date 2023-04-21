@@ -37,10 +37,6 @@ export const Album = () => {
             
             <header>
 
-                <div className="navigationMenu">
-                    <h2 onClick={ () => navigate('/') }>Meus Álbuns</h2> / <h2>{params.album}</h2>
-                </div>
-
                 <div className="actionsMenu">
                     <div className="searchAlbum">
                         <input type="search" placeholder="Procurar Álbum"/>

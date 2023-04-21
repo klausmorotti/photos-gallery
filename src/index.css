@@ -9,14 +9,7 @@
   font-family:'Poppins';
 }
 
-.navigationMenu {
-  display:flex;
-  align-items:center;
-  color:#373737;
-}
-
 h2 {
-  margin:0 10px;
   cursor:pointer;
 }
 h2:hover {

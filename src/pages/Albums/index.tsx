@@ -35,10 +35,6 @@ export const Albums = () => {
             
             <header>
 
-                <div className="navigationMenu">
-                    <h2>Meu Álbuns</h2>
-                </div>
-
                 <div className="actionsMenu">
                     <div className="searchAlbum">
                         <input type="search" placeholder="Procurar Álbum"/>
