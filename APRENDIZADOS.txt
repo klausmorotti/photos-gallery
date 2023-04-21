@@ -1,0 +1,7 @@
+GALERIA DE FOTOS:
+
+FIREBASE: Instalando Firebase(Lib de serviços de storage, mensagem, etc..)
+npm install firebase
+
+1- Criar projeto lá no firebase
+2- Pegar firebaseConfig e jogar dentro de um arquivo no vscode Src --> Libs --> Firebase.ts
